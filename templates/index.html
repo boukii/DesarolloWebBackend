@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      window.watsonAssistantChatOptions = {
+          integrationID: "9b0e845d-6281-4c72-8cd9-2ef76370f18e", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "122285db-8e63-4be0-ab1c-56eaf5b79976", // The ID of your service instance.
+          onLoad: function (instance) { instance.render(); }
+      };
+      setTimeout(function () {
+          const t = document.createElement('script');
+          t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+          document.head.appendChild(t);
+      });
+  </script>
+  <title>Hello, {{ data }}!</title>
+    <title>Página COVID-19</title>
+  </head>
+
+  <body>
+    <header class="header" id="inicio">
+      <img src="static/img/hamburger.svg" alt="" class="hamburger" />
+      <nav class="menu-navegacion">
+        <a href="/login">Login</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicio">Información Importante</a>
+        <a href="#portafolio">Sintomas</a>
+        <a href="#expertos">Más Información</a>
+        <a href="#contacto">Contacto</a>
+        <a href="/logout">Logout</a>
+
+      </nav>
+      <div class="contenedor head">
+        <h1 class="titulo">Info COVID-19</h1>
+        <p class="copy">
+          Página dedicada a brindar información oficial de distintos medios
+          acerca del COVID-19
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="contenedor" id="servicio">
+        <h2 class="subtitulo">Informacion importante respecto a COVID-19</h2>
+        <div class="contenedor-servicio">
+          <img src="static/img/covid-4941846.png" alt="" />
+
+          <div class="checklist-servicio">
+            <div class="service">
+              <h3 class="n-service"><span class="number">1</span>Principales sintomas</h3>
+              <p>-Tos</p>
+              <p>-Fiebre</p>
+              <p>-Cansancio</p>
+              <p>-Perdida del gusto y/o del olfato</p>
+            </div>
+            <div class="service">
+              <h3 class="n-service">
+                <span class="number">2</span>Ultimas Noticias
+              </h3>
+              <a href="https://elpais.com/mexico/2022-03-30/y-ahora-que-hacemos-con-el-coronavirus-10-preguntas-sobre-covid-19-en-un-pais-harto-de-la-pandemia.html">¿Y ahora qué hacemos con el coronavirus? 10 preguntas sobre covid-19 en un país harto de la pandemia</a>
+              <br><br>
+            </div>
+            <div class="service">
+              <h3 class="n-service">
+                <span class="number">3</span>Páginas Oficiales
+              </h3>
+              <a href="https://coronavirus.gob.mx/"
+                >Página oficial de el Gobierno de México</a
+              >
+              <br></br>
+
+              <a
+                href=" https://www.who.int/es/news-room/questions-and-answers/item/coronavirus-disease-covid-19#"
+              >
+                Página oficial de la OMS (Organización Mundial de la Salud)</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="portafolio">
+        <div class="contenedor">
+          <h2 class="subtitulo">Sintomas</h2>
+          <div class="contenedor-galeria">
+            <img src="sta3tic/img/1.png" alt="" class="img-galeria" />
+            <img src="static/img/2.png" alt="" class="img-galeria" />
+            <img src="static/img/3.png" alt="" class="img-galeria" />
+            <img src="static/img/4.png" alt="" class="img-galeria" />
+            <img src="static/img/5.png" alt="" class="img-galeria" />
+            <img src="static/img/6.png" alt="" class="img-galeria" />
+          </div>
+        </div>
+      </section>
+
+      <section class="imagen-light">
+        <img src="img/close.min.svg" alt="" class="close" />
+        <img src="" alt="" class="agregar-imagen" />
+      </section>
+
+      <section class="contenedor" id="expertos">
+        <h2 class="subtitulo">Para mas informacion:</h2>
+        <section class="experts">
+          <div class="cont-experts">
+            <img src="img/frecuente.svg" alt="" />
+            <h3 class="n-expert">Preguntas frecuentes</h3>
+          </div>
+          <div class="cont-experts">
+            <img src="img/noticias-destacadas-web.jpg" alt="" />
+            <h3 class="n-expert">Noticias</h3>
+          </div>
+          <div class="cont-experts">
+            <img src="img/download.png" alt="" />
+            <h3 class="n-expert">Materiales de consulta</h3>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer id="contacto">
+      <div class="contenedor footer-content">
+        <div class="contact-us">
+          <h2 class="brand">COVID-19</h2>
+          <p>información Confiable</p>
+        </div>
+        <div class="social-media">
+          <a href="https://www.yobiss.com" class="social-media-icon">
+            <i class="bx bx-face bx-lg"></i>
+          </a>
+          <a href="./" class="social-media-icon">
+            <i class="bx bxl-instagram-alt bx-lg"></i>
+          </a>
+          <a href="./" class="social-media-icon">
+            <i class="bx bxl-instagram-alt bx-lg"></i>
+          </a>
+        </div>
+      </div>
+      <div class="line"></div>
+    </footer>
+
+    <script src="static/js/menu.js"></script>
+    <script src="static/js/lightbox.js"></script>
+  </body>
+</html>
