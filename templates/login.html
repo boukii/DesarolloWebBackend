@@ -1,7 +1,9 @@
 <html>
 <head>
-    <title>Flask Intro - login page</title>
+    <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
@@ -9,23 +11,36 @@
     <h2>Inicia Sesión o Crea una cuenta</h2>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="/signup" method="POST">
+            <form name="create_form" action="/insert" method="POST">
                 <h1>Create Account</h1>
                 <span>or use your email for registration</span>
-                <input type="text" name="name" placeholder="Name" />
-                <input type="email" name="email" placeholder="Email" />
-                <input type="password" name="password" placeholder="Password" />
-                <button>Sign Up</button>
-            </form>
+                <div class="form-group">
+                    <input type="Matricula" name="matricula" class"form-control" placeholder="Matricula" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="nombre" class"form-control"  placeholder="Name" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" name="correo" class"form-control"  placeholder="Email" required />
+                </div>
+                <div class="form-group">
+                    <input type="password" name="contrasena" class"form-control"  placeholder="Password" required />
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Sign Up</button>
+                </div>
+                </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="/login" method="POST">
+            <form name="login_form" action="/login" method="POST">
                 <h1>Sign in</h1>
                 <span>or use your account</span>
-                <input type="email" name="email" placeholder="Email" />
-                <input type="password" name="password" placeholder="Password" />
+                <input type="email" name="correo" placeholder="Email" required />
+                <input type="password" name="contrasena" placeholder="Password" required />
                 <!-- <a href="#">Forgot your password?</a> -->
                 <button type="submit">Sign In</button>
+                <p class="error error--hidden"></p>
             </form>
         </div>
         <div class="overlay-container">
@@ -44,14 +59,7 @@
         </div>
     </div>
 
-    <footer>
-        <p>
-            Created with <i class="fa fa-heart"></i> by
-            <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-            - Read how I created this and how you can join the challenge
-            <a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
-        </p>
-    </footer>
+    
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');

@@ -31,7 +31,7 @@
           document.head.appendChild(t);
       });
   </script>
-  <title>Hello, {{ data }}!</title>
+  <title>Hola, {{ data[0] }}!</title>
     <title>Página COVID-19</title>
   </head>
 
@@ -49,6 +49,7 @@
 
       </nav>
       <div class="contenedor head">
+        <h1 class="titulo">Bienvenido {{data[0]}} </h1>
         <h1 class="titulo">Info COVID-19</h1>
         <p class="copy">
           Página dedicada a brindar información oficial de distintos medios
@@ -56,6 +57,28 @@
         </p>
       </div>
     </header>
+    <div class="card-wrapper">
+
+      <div class="card">  
+
+        <h1 class="center">Información Personal sobre su cuenta</h1>
+  
+      </div>
+
+      <div class="card">
+
+        <h2 class="center">Su Información</h2>
+
+        <p>
+          <strong>Matricula:</strong> {{ data[1] }} <br>
+          <strong>Nombre:</strong> {{ data[0] }} <br>
+          <strong>Correo:</strong> {{ data[2] }}
+        </p>
+
+      </div>
+
+    </div>
+
 
     <main>
       <section class="contenedor" id="servicio">
@@ -101,7 +124,7 @@
         <div class="contenedor">
           <h2 class="subtitulo">Sintomas</h2>
           <div class="contenedor-galeria">
-            <img src="sta3tic/img/1.png" alt="" class="img-galeria" />
+            <img src="static/img/1.png" alt="" class="img-galeria" />
             <img src="static/img/2.png" alt="" class="img-galeria" />
             <img src="static/img/3.png" alt="" class="img-galeria" />
             <img src="static/img/4.png" alt="" class="img-galeria" />
